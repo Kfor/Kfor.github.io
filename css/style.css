@@ -102,8 +102,8 @@ a img {
   font-family: "Microsoft YaHei";
   font-style: normal;
   font-weight: normal;
-  src: url("../font/fontawesome-webfont.eot?v=#4.0.3");
-  src: url("../font/fontawesome-webfont.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("../font/fontawesome-webfont.woff?v=#4.0.3") format("woff"), url("../font/fontawesome-webfont.ttf?v=#4.0.3") format("truetype"), url("../font/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format("svg");
+  src: url("../font/micross.eot?v=#4.0.3");
+  src: url("../font/micross.eot?#iefix&v=#4.0.3") format("embedded-opentype"), url("../font/micross.woff?v=#4.0.3") format("woff"), url("../font/micross.ttf?v=#4.0.3") format("truetype"), url("../font/micross.svg#fontawesomeregular?v=#4.0.3") format("svg");
 }
 /* Public style */
 * {
