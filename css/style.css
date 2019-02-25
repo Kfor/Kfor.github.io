@@ -114,7 +114,7 @@ body {
   background: #ddd;
   font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
   font-size: 100%;
-  color: #817c7c;
+  color: #000;
   line-height: 1.5;
 }
 small {
@@ -136,7 +136,7 @@ sub {
 }
 a {
   text-decoration: none;
-  color: #817c7c;
+  color: #000;
 }
 a:hover,
 a:focus {
@@ -614,14 +614,14 @@ header nav ul li a:hover {
   border-left: 0.5em solid #000;
 }
 #main section.post a h1 {
-  color: #2ca6cb;
+  color: #2c7ecb;
   line-height: 2;
 }
 #main section.post a p {
-  color: #817c7c;
+  color: #000;
 }
 #main section.post a time {
-  color: #817c7c;
+  color: #000;
   display: block;
   margin: 0.5em 0;
   font-size: 0.5em;
@@ -640,7 +640,7 @@ header nav ul li a:hover {
   padding: 0.5em 1em;
 }
 #page-nav a {
-  color: #2ca6cb;
+  color: #2c7ecb;
 }
 #page-nav a:hover {
   background: #ccc;
@@ -674,7 +674,7 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 #page-nav .space {
-  color: #2ca6cb;
+  color: #2c7ecb;
 }
 /* page layout */
 @media only screen and (min-width: 1024px) {
@@ -719,11 +719,11 @@ header nav ul li a:hover {
 }
 .archive-title h2 {
   width: 90%;
-  color: #2ca6cb;
+  color: #2c7ecb;
   font-size: 120%;
 }
 .archive-title a {
-  color: #2ca6cb;
+  color: #2c7ecb;
   -webkit-transition: color 0.5s;
   -moz-transition: color 0.5s;
   -o-transition: color 0.5s;
@@ -784,7 +784,7 @@ header nav ul li a:hover {
 }
 .post a,
 .page a {
-  color: #2ca6cb;
+  color: #2c7ecb;
 }
 .post a:hover,
 .page a:hover {
@@ -951,7 +951,7 @@ article .article-content strong code,
 article .article-content em code {
   font-family: Monaco, Menlo, Consolas, Courier New, monospace;
   background: #eee;
-  color: #747070;
+  color: #000;
   border: 1px solid #d6d6d6;
   padding: 0 5px;
   margin: 0 2px;
@@ -1092,7 +1092,7 @@ footer.article-footer {
   font-size: 100%;
   font-family: "FontAwesome";
   text-align: center;
-  color: #817c7c;
+  color: #000;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 1.5em;
@@ -1206,7 +1206,7 @@ footer.article-footer {
   color: #ccc;
 }
 .qrclose:hover:before {
-  color: #2ca6cb !important;
+  color: #2c7ecb !important;
 }
 .overlay {
   display: none !important;
@@ -1266,7 +1266,7 @@ footer.article-footer {
 }
 .article-tags a:hover {
   color: #fff;
-  background: #2ca6cb;
+  background: #2c7ecb;
 }
 .article-categories {
   color: #d6d6d6;
@@ -1284,7 +1284,7 @@ footer.article-footer {
 }
 .article-category-link:hover {
   color: #fff !important;
-  background: #2ca6cb;
+  background: #2c7ecb;
 }
 .article-nav {
   padding: 0 10%;
@@ -1303,7 +1303,7 @@ footer.article-footer {
 }
 .article-nav .prev a:hover,
 .article-nav .next a:hover {
-  background: #2ca6cb;
+  background: #2c7ecb;
   color: #fff;
 }
 .article-nav .prev {
@@ -1408,7 +1408,7 @@ section.comment {
 }
 #toc.toc-aside strong {
   padding: 0.3em 0;
-  color: #817c7c;
+  color: #000;
 }
 #toc.toc-aside:hover {
   -webkit-transition: opacity 0.3s ease-out;
@@ -1465,7 +1465,7 @@ section.comment {
   color: #000;
 }
 .closeaside a:hover {
-  color: #2ca6cb;
+  color: #2c7ecb;
 }
 .closeaside a::before {
   font-family: "FontAwesome";
@@ -1496,12 +1496,12 @@ section.comment {
 }
 .asidetitle {
   font-size: 1.1em;
-  color: #2ca6cb;
+  color: #2c7ecb;
   padding: 0 0 0.3125em 0;
   border-bottom: 0.1875em solid #ccc;
 }
 .asidetitle a {
-  color: #2ca6cb;
+  color: #2c7ecb;
 }
 .asidetitle a:hover {
   color: #000;
@@ -1830,7 +1830,7 @@ footer {
   }
 }
 .social-font a:hover:before {
-  color: #2ca6cb;
+  color: #2c7ecb;
 }
 .social-font a[title="weibo"]::before,
 .social-font a[title="twitter"]::before,
@@ -1873,10 +1873,10 @@ footer {
   color: #fff;
 }
 .copyright a:hover {
-  color: #2ca6cb;
+  color: #2c7ecb;
 }
 .ds-highlight {
-  color: #2ca6cb !important;
+  color: #2c7ecb !important;
 }
 .ds-highlight:hover {
   color: #000 !important;
@@ -1942,14 +1942,14 @@ footer {
   padding-bottom: 1em !important;
 }
 textarea {
-  color: #817c7c !important;
+  color: #000 !important;
   background: #fff !important;
 }
 textarea::-webkit-input-placeholder {
-  color: #817c7c !important;
+  color: #000 !important;
 }
 textarea::-moz-placeholder {
-  color: #817c7c !important;
+  color: #000 !important;
 }
 .article-gallery {
   background: #fafafa;
