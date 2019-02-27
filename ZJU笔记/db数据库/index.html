@@ -9,7 +9,7 @@
     
     <meta name="author" content="K.">
     
-    <meta name="description" content="还没上">
+    <meta name="description" itemprop="description" content="(记得整理！记得作业！)数据库系统，至此没学啥">
     
     
     
@@ -70,7 +70,7 @@
     </p>
   <p class="article-time">
     <time datetime="2019-02-26T12:38:46.000Z" itemprop="datePublished">2019-02-26</time>
-    更新日期:<time datetime="2019-02-26T12:55:04.871Z" itemprop="dateModified">2019-02-26</time>
+    更新日期:<time datetime="2019-02-27T07:50:10.052Z" itemprop="dateModified">2019-02-27</time>
     
   </p>
 </header>
@@ -79,10 +79,86 @@
 		
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
-		
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gt-2-27"><span class="toc-number">1.</span> <span class="toc-text">-&gt;2.27</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Zero-requirement"><span class="toc-number">1.1.</span> <span class="toc-text">Zero. requirement</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#One-Relation"><span class="toc-number">1.2.</span> <span class="toc-text">One. Relation</span></a></li></ol></li></ol>
 		</div>
 		
-		<p>还没上</p>
+		<h1 id="gt-2-27"><a href="#gt-2-27" class="headerlink" title="-&gt;2.27"></a>-&gt;2.27</h1><h2 id="Zero-requirement"><a href="#Zero-requirement" class="headerlink" title="Zero. requirement"></a>Zero. requirement</h2><p>春学期，5个小实验，机房，有实验报告。第一周不去实验课</p>
+<p>夏学期，组队的pro</p>
+<p>考试，手写a4纸</p>
+<p>成绩</p>
+<p>10% exercise</p>
+<p>10% quiz 5 times</p>
+<p>30% experiments and pro</p>
+<p>50% final</p>
+<p>对数据语义的抽象：orm关系数据模型，用一个模型描述所有的数据，降低了编程使用门槛（用户行业力量）。统码的数据库模型</p>
+<p>对业务逻辑的抽象：事务处理模型</p>
+<ul>
+<li>hadoop是分布式系统的基础架构。该框架最核心的设计是：HDFS，MapReduce，前者储存，后者计算</li>
+</ul>
+<p>开源数据库：例如mysql。开始没钱，免费；后期有钱，又因为开源，可以自己修改</p>
+<p>可自行修改，例如阿里，oracle想不到有双十一这种事情</p>
+<p>database学习三个层次：</p>
+<ol>
+<li><p>modeling and design of database：要不要设计视图、索引等等等等（会开车）</p>
+</li>
+<li><p>programming：例如用SQL等（会去4s店修车）</p>
+</li>
+<li><p>DBMS implementation：database management system（造车）</p>
+</li>
+</ol>
+<p>database的三个层次:</p>
+<ol>
+<li>物理存储层:内模式。注：物理层次独立性physical data independence，即使数据结构变了，更高层次都不用动才行。</li>
+<li>逻辑层:模式。注：logical data independence</li>
+<li>视图层:外/子模式</li>
+</ol>
+<p>database：不能丢、有组织、可共享</p>
+<p>数据库出现之前， 用file-processing-system存储，但问题：</p>
+<ol>
+<li>数据的冗余；不一致性（修改麻烦易出错，冲突）</li>
+<li>抽象层次过低，会淹没在代码里</li>
+<li>硬件可能坏，数据可能丢：——多个机房同时存储数据。（冗余增加可靠性）什么如何存储，同步等，交给数据库来处理（提前考虑到硬件的损坏）。数据交换一半，停电，如何调配?</li>
+<li>大量同时访问？</li>
+</ol>
+<p>课程大纲：</p>
+<ol>
+<li>数据模型：关系数据模型；评价一个表的好坏（集成、耦合，冗余和不一致）</li>
+<li>数据库语言：DDL（data defination languages），SQL(描述型)</li>
+</ol>
+<h2 id="One-Relation"><a href="#One-Relation" class="headerlink" title="One. Relation"></a>One. Relation</h2><ul>
+<li>关系是一系列集合（例如，专业集合，学生集合）的笛卡尔积的子集（选出对应），可以用一章二维表来表示</li>
+<li>表的模式（schema）：有多少个属性，是什么类型</li>
+<li>表的实例（instance）</li>
+</ul>
+<ul>
+<li><p>关系（relation）和表（table）；列（column）和属性（attribute）；元组（tuples）和行（row）和记录（recording），都是一回事。不能重复，不可分割</p>
+</li>
+<li><p>在数据库里面全都是表。即使是“表有什么属性”，这些东西也是用表来表示的。这些称为元数据。</p>
+</li>
+</ul>
+<ul>
+<li><p>superkey（例如{ID}，{ID，name}都是）决定，则其他所有的属性都是一样的</p>
+</li>
+<li><p>候选码（candidate key），是superkey的最小子集，不可再删。由于未必唯一，故其中挑一个叫做主码（primary key）。</p>
+</li>
+</ul>
+<p>基础关系代数算子（操作）：</p>
+<ul>
+<li>select：横向切。用小写西格玛表示<br>$$<br>\sigma_{(A_1&gt;0\land A_2=5)}(r)<br>$$</li>
+</ul>
+<ul>
+<li><p>project：纵向切。用大写pi来表示（注意切下来可能需要去重）</p>
+</li>
+<li><p>union：schema一样的情况下纵向合并。用∪表示</p>
+</li>
+<li><p>set difference：在一中有，二中没有。用减号表示</p>
+</li>
+<li><p>笛卡尔积cartesian product：把所有的排列组合算出。{tp|t∈r, p∈s}用乘号表示</p>
+</li>
+<li><p>rename</p>
+</li>
+</ul>
+<p>作业写在本子上</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -131,7 +207,7 @@
 
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
-  
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gt-2-27"><span class="toc-number">1.</span> <span class="toc-text">-&gt;2.27</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Zero-requirement"><span class="toc-number">1.1.</span> <span class="toc-text">Zero. requirement</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#One-Relation"><span class="toc-number">1.2.</span> <span class="toc-text">One. Relation</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
@@ -143,7 +219,7 @@
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/categories/ZJU笔记/" title="ZJU笔记">ZJU笔记<sup>12</sup></a></li>
+			<li><a href="/categories/ZJU笔记/" title="ZJU笔记">ZJU笔记<sup>13</sup></a></li>
 		
 			<li><a href="/categories/人！/" title="人！">人！<sup>1</sup></a></li>
 		
@@ -153,9 +229,9 @@
 		
 			<li><a href="/categories/美！/" title="美！">美！<sup>1</sup></a></li>
 		
-			<li><a href="/categories/超技术-technique/" title="超技术 (technique)">超技术 (technique)<sup>6</sup></a></li>
+			<li><a href="/categories/超技术-technique/" title="超技术 (technique)">超技术 (technique)<sup>2</sup></a></li>
 		
-			<li><a href="/categories/超超世界-coooool-project/" title="超超世界 (coooool project)">超超世界 (coooool project)<sup>1</sup></a></li>
+			<li><a href="/categories/超超世界-coooool-project/" title="超超世界 (coooool project)">超超世界 (coooool project)<sup>5</sup></a></li>
 		
 			<li><a href="/categories/超超超复杂-about-me-and-xiache/" title="超超超复杂 (about me and xiache)">超超超复杂 (about me and xiache)<sup>5</sup></a></li>
 		
@@ -187,7 +263,7 @@
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">30</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">31</span></li></ul>
   </div>
 
 
