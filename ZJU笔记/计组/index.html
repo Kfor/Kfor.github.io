@@ -1,0 +1,399 @@
+
+ <!DOCTYPE HTML>
+<html lang="zh-CN">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+  
+    <title>计组 | K.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
+    
+    <meta name="author" content="K.">
+    
+    <meta name="description" content="-&amp;gt;2.26Zero. Preface
+设计好的cpu是电子而非计算机专业的事
+冯诺依曼架构的cpu局限已经体现
+桌面端和服务器端的x86是不对外授权的，所以只有3家intel、amd、xxx盛
+SOC：system on chip
+GPU: 有高密度的Datapath
+如何很好的用好memo">
+    
+    
+    
+    
+    
+    <link rel="icon" href="/img/favicon.ico">
+    
+    
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+  <body>
+    <header>
+      <div>
+		
+			<div id="textlogo">
+				<h1 class="site-name"><a href="/" title="K.">K.</a></h1>
+				<h2 class="blog-motto">超超超厉害！</h2>
+			</div>
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			</a></div>
+			<nav class="animated">
+				<ul>
+					
+						<li><a href="/">Home</a></li>
+					
+						<li><a href="/archives">Archives</a></li>
+					
+						<li><a href="/tags">tags</a></li>
+					
+						<li><a href="/categories">categories</a></li>
+					
+					<li>
+					
+					<form class="search" action="//google.com/search" method="get" accept-charset="utf-8">
+						<label>Search</label>
+						<input type="text" id="search" name="q" autocomplete="off" maxlength="20" placeholder="搜索">
+						<input type="hidden" name="q" value="site:kfor.me">
+					</form>
+					
+					</li>
+				</ul>
+			</nav>			
+</div>
+
+    </header>
+    <div id="container">
+      <div id="main" class="post" itemscope itemprop="blogPost">
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
+      <a href="/ZJU笔记/计组/" title="计组" itemprop="url">计组</a>
+  </h1>
+  <p class="article-author">By
+    
+      <a href="https://kfor.me" title="K.">K.</a>
+    </p>
+  <p class="article-time">
+    <time datetime="2019-02-26T12:37:12.000Z" itemprop="datePublished">2019-02-26</time>
+    更新日期:<time datetime="2019-02-26T13:05:45.901Z" itemprop="dateModified">2019-02-26</time>
+    
+  </p>
+</header>
+	<div class="article-content">
+		
+		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gt-2-26"><span class="toc-number">1.</span> <span class="toc-text">-&gt;2.26</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Zero-Preface"><span class="toc-number">1.1.</span> <span class="toc-text">Zero. Preface</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#成绩组成"><span class="toc-number">1.2.</span> <span class="toc-text">成绩组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#One-xxx"><span class="toc-number">1.3.</span> <span class="toc-text">One. xxx</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#几大思想："><span class="toc-number">1.3.1.</span> <span class="toc-text">几大思想：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#from-HLL-to-language-of-hardware"><span class="toc-number">1.3.2.</span> <span class="toc-text">from HLL to language of hardware</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实验1"><span class="toc-number">1.3.3.</span> <span class="toc-text">实验1</span></a></li></ol></li></ol></li></ol>
+		</div>
+		
+		<h1 id="gt-2-26"><a href="#gt-2-26" class="headerlink" title="-&gt;2.26"></a>-&gt;2.26</h1><h2 id="Zero-Preface"><a href="#Zero-Preface" class="headerlink" title="Zero. Preface"></a>Zero. Preface</h2><ul>
+<li>设计好的cpu是电子而非计算机专业的事</li>
+<li>冯诺依曼架构的cpu局限已经体现</li>
+<li>桌面端和服务器端的x86是不对外授权的，所以只有3家intel、amd、xxx盛</li>
+<li>SOC：system on chip</li>
+<li>GPU: 有高密度的Datapath</li>
+<li>如何很好的用好memory的层级hierachy</li>
+</ul>
+<p>本课：简单的risc-cpu核实现</p>
+<ul>
+<li>实验课外作业：mips汇编器设计</li>
+<li>target: design a simply CPU</li>
+</ul>
+<h2 id="成绩组成"><a href="#成绩组成" class="headerlink" title="成绩组成"></a>成绩组成</h2><p>20% 平时</p>
+<p>10% 期中</p>
+<p>40% 期末</p>
+<p>30% 实验：2次实验一个报告，10% assignments，30% basic，40% integrated，20% final project</p>
+<p>HLL: high level language</p>
+<h2 id="One-xxx"><a href="#One-xxx" class="headerlink" title="One. xxx"></a>One. xxx</h2><p>chip计算机工业的石油</p>
+<p>internal organization and its influence on program</p>
+<p>I/O系统决定快慢，例如USB3.0,2.0</p>
+<h3 id="几大思想："><a href="#几大思想：" class="headerlink" title="几大思想："></a>几大思想：</h3><ul>
+<li>面向摩尔定律的设计</li>
+<li>使用抽象简化设计：做应用的人不需要在意硬件。前后端接口。</li>
+<li>加速大概率事件：优化程序，就优化调用特别多的地方</li>
+<li>并行性：购物网站很适合并行处理，因为各个工作之间的耦合很少。顶多就是买下了库存减减</li>
+<li>流水线：分部件工作调用闲置。福特</li>
+<li>预测提高性能：例如，一个条件判断，其实常常是其中一个而其他是偶然。而每到条件就判断，是对流水性有影响的。所以根据已有的记录，不判断就执行其中一条，更快。事实上浏览器就如此操作，最近读过的网站存到缓存中，下次打开速度快很多。（但这里有风险，如果敏感信息未能及时清除，可能被盗取）</li>
+<li>存储器层次</li>
+<li>冗余提高可靠性</li>
+</ul>
+<h3 id="from-HLL-to-language-of-hardware"><a href="#from-HLL-to-language-of-hardware" class="headerlink" title="from HLL to language of hardware"></a>from HLL to language of hardware</h3><p>从底层到高层：</p>
+<p>layout-&gt;circuit design-&gt;digital design-&gt;datapath&amp;control-&gt;instruction set processor+i/o system-&gt;指令集硬件和low level软件的接口(instruction set architecture)-&gt;operation system(included firmware+half of compiler)-&gt;application(half of compiler)    </p>
+<ul>
+<li>手机上没有编译器，只需要app，是编译好后离线登了上来</li>
+<li>指令集，就是定好10001是加法，。。。</li>
+<li>arm是一家专门做指令集的公司，现在被日本收购</li>
+<li>assembly language</li>
+</ul>
+<p>复习dram，sram，cache相关</p>
+<p>volatile，掉电是否丢失数据</p>
+<h3 id="实验1"><a href="#实验1" class="headerlink" title="实验1"></a>实验1</h3><p>rom：只读，上电东西就已经在了。所以需要初始化。常用放程序</p>
+<p>ram：可读写。常用放数据</p>
+<p>键盘原理：y是输入，x是输出。同一时刻，只有一列是1，这一列和x的某一行接触将其置成1；扫描按照交叉坐标得到按键位置</p>
+  
+	</div>
+		<footer class="article-footer clearfix">
+
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/ZJU笔记/">ZJU笔记</a>
+</div>
+
+
+
+<div class="article-share" id="share">
+
+  <div data-url="https://kfor.me/ZJU笔记/计组/" data-title="计组 | K." data-tsina class="share clearfix">
+  </div>
+
+</div>
+</footer>   	       
+	</article>
+	
+<nav class="article-nav clearfix">
+ 
+ <div class="prev">
+ <a href="/ZJU笔记/ode常微分/" title="ode常微分">
+  <strong>PREVIOUS:</strong><br>
+  <span>
+  ode常微分</span>
+</a>
+</div>
+
+
+<div class="next">
+<a href="/人！/人/" title="人">
+ <strong>NEXT:</strong><br> 
+ <span>人
+</span>
+</a>
+</div>
+
+</nav>
+
+	
+</div>  
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gt-2-26"><span class="toc-number">1.</span> <span class="toc-text">-&gt;2.26</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Zero-Preface"><span class="toc-number">1.1.</span> <span class="toc-text">Zero. Preface</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#成绩组成"><span class="toc-number">1.2.</span> <span class="toc-text">成绩组成</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#One-xxx"><span class="toc-number">1.3.</span> <span class="toc-text">One. xxx</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#几大思想："><span class="toc-number">1.3.1.</span> <span class="toc-text">几大思想：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#from-HLL-to-language-of-hardware"><span class="toc-number">1.3.2.</span> <span class="toc-text">from HLL to language of hardware</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#实验1"><span class="toc-number">1.3.3.</span> <span class="toc-text">实验1</span></a></li></ol></li></ol></li></ol>
+  </div>
+
+<div id="asidepart">
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<aside class="clearfix">
+
+  
+<div class="categorieslist">
+	<p class="asidetitle">分类</p>
+		<ul>
+		
+			<li><a href="/categories/ZJU笔记/" title="ZJU笔记">ZJU笔记<sup>12</sup></a></li>
+		
+			<li><a href="/categories/人！/" title="人！">人！<sup>1</sup></a></li>
+		
+			<li><a href="/categories/摘！/" title="摘！">摘！<sup>1</sup></a></li>
+		
+			<li><a href="/categories/爱！/" title="爱！">爱！<sup>1</sup></a></li>
+		
+			<li><a href="/categories/美！/" title="美！">美！<sup>1</sup></a></li>
+		
+			<li><a href="/categories/超技术-technique/" title="超技术 (technique)">超技术 (technique)<sup>6</sup></a></li>
+		
+			<li><a href="/categories/超超世界-coooool-project/" title="超超世界 (coooool project)">超超世界 (coooool project)<sup>1</sup></a></li>
+		
+			<li><a href="/categories/超超超复杂-about-me-and-xiache/" title="超超超复杂 (about me and xiache)">超超超复杂 (about me and xiache)<sup>5</sup></a></li>
+		
+		</ul>
+</div>
+
+
+  
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/哲学/" style="font-size: 10px;">哲学</a> <a href="/tags/相貌决定论/" style="font-size: 10px;">相貌决定论</a> <a href="/tags/瞎写/" style="font-size: 10px;">瞎写</a> <a href="/tags/超超/" style="font-size: 10px;">超超</a>
+    </div>
+  </div>
+
+
+  <div class="rsspart">
+	<a href target="_blank" title="rss">RSS 订阅</a>
+</div>
+
+  <div class="linkslist">
+  <p class="asidetitle">友情链接</p>
+    <ul>
+      <li><a href="http://kforitp.com" target="_blank" title="-.-">哼没有</a></li>
+    </ul>
+</div>
+
+
+  
+  <div class="archiveslist">
+    <p class="asidetitle"><a href="/archives">归档</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">30</span></li></ul>
+  </div>
+
+
+</aside>
+</div>
+    </div>
+    <footer><div id="footer">
+	
+	
+	<div class="social-font clearfix">
+		
+		
+		
+		
+		
+	</div>
+		<p class="copyright">Powered by <a href="http://hexo.io" target="_blank" title="hexo">hexo</a> and Theme by <a href="https://github.com/A-limon/pacman" target="_blank" title="Pacman">Pacman</a> © 2019 
+		
+		<a href="https://kfor.me" target="_blank" title="K.">K.</a>
+		
+		</p>
+</div>
+</footer>
+    <script src="/js/jquery-2.1.0.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.navbar').click(function(){
+    $('header nav').toggleClass('shownav');
+  });
+  var myWidth = 0;
+  function getSize(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+  };
+  var m = $('#main'),
+      a = $('#asidepart'),
+      c = $('.closeaside'),
+      o = $('.openaside');
+  $(window).resize(function(){
+    getSize(); 
+    if (myWidth >= 1024) {
+      $('header nav').removeClass('shownav');
+    }else
+    {
+      m.removeClass('moveMain');
+      a.css('display', 'block').removeClass('fadeOut');
+      o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
+        
+    }
+  });
+  c.click(function(){
+    a.addClass('fadeOut').css('display', 'none');
+    o.css('display', 'block').addClass('fadeIn');
+    m.addClass('moveMain');
+  });
+  o.click(function(){
+    o.css('display', 'none').removeClass('beforeFadeIn');
+    a.css('display', 'block').removeClass('fadeOut').addClass('fadeIn');      
+    m.removeClass('moveMain');
+  });
+  $(window).scroll(function(){
+    o.css("top",Math.max(80,260-$(this).scrollTop()));
+  });
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var ai = $('.article-content>iframe'),
+      ae = $('.article-content>embed'),
+      t  = $('#toc'),
+      h  = $('article h2')
+      ah = $('article h2'),
+      ta = $('#toc.toc-aside'),
+      o  = $('.openaside'),
+      c  = $('.closeaside');
+  if(ai.length>0){
+    ai.wrap('<div class="video-container" />');
+  };
+  if(ae.length>0){
+   ae.wrap('<div class="video-container" />');
+  };
+  if(ah.length==0){
+    t.css('display','none');
+  }else{
+    c.click(function(){
+      ta.css('display', 'block').addClass('fadeIn');
+    });
+    o.click(function(){
+      ta.css('display', 'none');
+    });
+    $(window).scroll(function(){
+      ta.css("top",Math.max(140,320-$(this).scrollTop()));
+    });
+  };
+});
+</script>
+
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina');
+  var html = [
+  '<a href="#" class="overlay" id="qrcode"></a>',
+  '<div class="qrcode clearfix"><span>扫描二维码分享到微信朋友圈</span><a class="qrclose" href="#share"></a><strong>Loading...Please wait</strong><img id="qrcode-pic" data-src="http://s.jiathis.com/qrcode.php?url=' + encodedUrl + '"/></div>',
+  '<a href="#textlogo" class="article-back-to-top" title="Top"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="QRcode"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="Weibo"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+  $('.article-share-qrcode').click(function(){
+    var imgSrc = $('#qrcode-pic').attr('data-src');
+    $('#qrcode-pic').attr('src', imgSrc);
+    $('#qrcode-pic').load(function(){
+        $('.qrcode strong').text(' ');
+    });
+  });
+});     
+</script>
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+  $('.article-content').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+      var alt = this.alt;
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
+  });
+  if($.fancybox){
+    $('.fancybox').fancybox();
+  }
+}); 
+</script>
+
+
+
+  </body>
+</html>

@@ -13,8 +13,8 @@
 20% big project
 30% lab
 reference: C++ Premier, Thinking in C++
-environment: visual studio 2015
-One. Introd">
+environment: visual studio 2015 -.-
+One. In">
     
     
     
@@ -75,36 +75,35 @@ One. Introd">
     </p>
   <p class="article-time">
     <time datetime="2019-02-25T14:09:40.000Z" itemprop="datePublished">2019-02-25</time>
-    更新日期:<time datetime="2019-02-26T09:21:13.012Z" itemprop="dateModified">2019-02-26</time>
+    更新日期:<time datetime="2019-02-26T12:34:35.917Z" itemprop="dateModified">2019-02-26</time>
     
   </p>
 </header>
 	<div class="article-content">
 		
 		
+		<div id="toc" class="toc-article">
+			<strong class="toc-title">文章目录</strong>
+		<ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gt-2-25"><span class="toc-number">1.</span> <span class="toc-text">-&gt;2.25</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Zero-Course-Requirement"><span class="toc-number">1.1.</span> <span class="toc-text">Zero. Course Requirement</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#One-Introduction"><span class="toc-number">1.2.</span> <span class="toc-text">One. Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Two-xxx-string-and-so-on"><span class="toc-number">1.3.</span> <span class="toc-text">Two. xxx(string and so on)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本节课："><span class="toc-number">1.4.</span> <span class="toc-text">本节课：</span></a></li></ol></li></ol>
+		</div>
+		
 		<h1 id="gt-2-25"><a href="#gt-2-25" class="headerlink" title="-&gt;2.25"></a>-&gt;2.25</h1><h2 id="Zero-Course-Requirement"><a href="#Zero-Course-Requirement" class="headerlink" title="Zero. Course Requirement"></a>Zero. Course Requirement</h2><p>50% final</p>
 <p>20% big project</p>
 <p>30% lab</p>
 <p>reference: C++ Premier, Thinking in C++</p>
-<p>environment: visual studio 2015</p>
+<p>environment: visual studio 2015 -.-</p>
 <h2 id="One-Introduction"><a href="#One-Introduction" class="headerlink" title="One. Introduction"></a>One. Introduction</h2><ul>
-<li>Because there are 2^n case for n “if”s, procedure-oriented can be easily miss some.</li>
-<li><strong>(so there maybe some logical checking tools)</strong></li>
+<li>Because there are 2^n case for n “if”s, procedure-oriented can easily miss some case.<strong>(so there maybe some logical checking tools)</strong></li>
 <li>c++ features: polymorphism(多态)，inheritance(继承)，encapsulation(封装)</li>
 <li>procedure-oriented(面向过程)、object-oriented(面向对象)、generic(泛型)</li>
 </ul>
-<h2 id="Two-xxx-string-and-so-on"><a href="#Two-xxx-string-and-so-on" class="headerlink" title="Two. xxx(string and so on)"></a>Two. xxx(string and so on)</h2><p>char c1[20];<br>char c2[20];<br>string s1;<br>string s2;<br>…<br>c1 = c2;//illeagal<br>s1 = s2;</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">char</span> c1[<span class="number">20</span>],c2[<span class="number">20</span>];</span><br><span class="line"><span class="built_in">string</span> s1,s2;</span><br><span class="line">c1 = c2;<span class="comment">//illeagal</span></span><br><span class="line">s1 = s2;<span class="comment">//leagal--'encapsulation'</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="attribute">sha</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<blockquote><p>sha</p>
-</blockquote>
-<p>/leagal–means we needn’t to think about memory possiblity, only the function of “the object”. this called ‘encapsulation’/</p>
-<p>#include <string><br>…<br>string str1(“comething”);//there may len, pos parameters but can be omited–overload<br>string str1(str2);//then str1 == str2</string></p>
+<h2 id="Two-xxx-string-and-so-on"><a href="#Two-xxx-string-and-so-on" class="headerlink" title="Two. xxx(string and so on)"></a>Two. xxx(string and so on)</h2><figure class="highlight mipsasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">char c1[<span class="number">20</span>],c2[<span class="number">20</span>]<span class="comment">;</span></span><br><span class="line">string <span class="built_in">s1</span>,<span class="built_in">s2</span><span class="comment">;</span></span><br><span class="line">c1 = c2<span class="comment">;//illeagal</span></span><br><span class="line"><span class="built_in">s1</span> = <span class="built_in">s2</span><span class="comment">;//leagal--'encapsulation'</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span><span class="meta-string">&lt;string&gt;</span></span></span><br><span class="line">...</span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">str1</span><span class="params">(<span class="string">"xxx"</span>)</span></span>;<span class="comment">//'len','pos' can be omited--overload</span></span><br><span class="line"><span class="function"><span class="built_in">string</span> <span class="title">str1</span><span class="params">(str2)</span></span>;</span><br></pre></td></tr></table></figure>
+<p>​    </p>
 <ul>
 <li><a href="http://www.cplusplus.com/reference/string/string/" target="_blank" rel="noopener">some string function</a></li>
 </ul>
-<p>cout&lt;&lt;”xxx”&lt;&lt;str1&lt;&lt;endl;<br>//the third “&lt;&lt;” is a non-member overload function of str1, so <string> must be included</string></p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cout</span>&lt;&lt;<span class="string">"xxx"</span>&lt;&lt;str1&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"><span class="comment">//the third "&lt;&lt;" is a non-member overload function of str1, so &lt;string&gt; must be included</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li><p>More about the operator”&lt;&lt;”:</p>
 <p>“str&lt;&lt;”: is a overload. In fact, it overloads the str as “ostream::opeartor&lt;&lt;”. (inserts the string into the stream)</p>
@@ -113,7 +112,7 @@ One. Introd">
 <li><p>&lt;ifstream> 、&lt;ofstream></p>
 </li>
 </ul>
-<p>ofstream File1(“path”);<br>File1&lt;&lt;”hello”&lt;&lt;endl;</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function">ofstream <span class="title">File1</span><span class="params">(<span class="string">"path"</span>)</span></span>;</span><br><span class="line">File1&lt;&lt;<span class="string">"hello"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br></pre></td></tr></table></figure>
 <h2 id="本节课："><a href="#本节课：" class="headerlink" title="本节课："></a>本节课：</h2><p>基本啥也没学</p>
 <p>注意str&lt;&lt;、endl，多看<a href="http://www.cplusplus.com/reference/" target="_blank" rel="noopener">官网文档</a>即可</p>
   
@@ -149,9 +148,9 @@ One. Introd">
 
 
 <div class="next">
-<a href="/超技术-technique/超技术/" title="超技术">
+<a href="/超技术-technique/超技术/" title="超技术 (readme)">
  <strong>NEXT:</strong><br> 
- <span>超技术
+ <span>超技术 (readme)
 </span>
 </a>
 </div>
@@ -159,12 +158,13 @@ One. Introd">
 </nav>
 
 	
-<section class="comment">
-	<div class="ds-thread"></div>
-</section>
-
 </div>  
       <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+
+  <div id="toc" class="toc-aside">
+  <strong class="toc-title">文章目录</strong>
+  <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gt-2-25"><span class="toc-number">1.</span> <span class="toc-text">-&gt;2.25</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Zero-Course-Requirement"><span class="toc-number">1.1.</span> <span class="toc-text">Zero. Course Requirement</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#One-Introduction"><span class="toc-number">1.2.</span> <span class="toc-text">One. Introduction</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Two-xxx-string-and-so-on"><span class="toc-number">1.3.</span> <span class="toc-text">Two. xxx(string and so on)</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#本节课："><span class="toc-number">1.4.</span> <span class="toc-text">本节课：</span></a></li></ol></li></ol>
+  </div>
 
 <div id="asidepart">
 <div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
@@ -175,25 +175,34 @@ One. Introd">
 	<p class="asidetitle">分类</p>
 		<ul>
 		
-			<li><a href="/categories/ZJU笔记/" title="ZJU笔记">ZJU笔记<sup>3</sup></a></li>
+			<li><a href="/categories/ZJU笔记/" title="ZJU笔记">ZJU笔记<sup>12</sup></a></li>
 		
 			<li><a href="/categories/人！/" title="人！">人！<sup>1</sup></a></li>
+		
+			<li><a href="/categories/摘！/" title="摘！">摘！<sup>1</sup></a></li>
 		
 			<li><a href="/categories/爱！/" title="爱！">爱！<sup>1</sup></a></li>
 		
 			<li><a href="/categories/美！/" title="美！">美！<sup>1</sup></a></li>
 		
-			<li><a href="/categories/超技术-technique/" title="超技术(technique)">超技术(technique)<sup>1</sup></a></li>
+			<li><a href="/categories/超技术-technique/" title="超技术 (technique)">超技术 (technique)<sup>6</sup></a></li>
 		
 			<li><a href="/categories/超超世界-coooool-project/" title="超超世界 (coooool project)">超超世界 (coooool project)<sup>1</sup></a></li>
 		
-			<li><a href="/categories/超超超复杂-about-me-and-xiache/" title="超超超复杂 (about me and xiache)">超超超复杂 (about me and xiache)<sup>2</sup></a></li>
+			<li><a href="/categories/超超超复杂-about-me-and-xiache/" title="超超超复杂 (about me and xiache)">超超超复杂 (about me and xiache)<sup>5</sup></a></li>
 		
 		</ul>
 </div>
 
 
   
+  <div class="tagcloudlist">
+    <p class="asidetitle">标签云</p>
+    <div class="tagcloudlist clearfix">
+       <a href="/tags/哲学/" style="font-size: 10px;">哲学</a> <a href="/tags/相貌决定论/" style="font-size: 10px;">相貌决定论</a> <a href="/tags/瞎写/" style="font-size: 10px;">瞎写</a> <a href="/tags/超超/" style="font-size: 10px;">超超</a>
+    </div>
+  </div>
+
 
   <div class="rsspart">
 	<a href target="_blank" title="rss">RSS 订阅</a>
@@ -210,7 +219,7 @@ One. Introd">
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">13</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/02/">二月 2019</a><span class="archive-list-count">30</span></li></ul>
   </div>
 
 
@@ -261,6 +270,8 @@ $(document).ready(function(){
       m.removeClass('moveMain');
       a.css('display', 'block').removeClass('fadeOut');
       o.css('display', 'none');
+      
+      $('#toc.toc-aside').css('display', 'none');
         
     }
   });
@@ -341,18 +352,6 @@ $(document).ready(function(){
 });     
 </script>
 
-
-<script type="text/javascript">
-  var duoshuoQuery = {short_name:"哈哈哈"};
-  (function() {
-    var ds = document.createElement('script');
-    ds.type = 'text/javascript';ds.async = true;
-    ds.src = '//static.duoshuo.com/embed.js';
-    ds.charset = 'UTF-8';
-    (document.getElementsByTagName('head')[0] 
-    || document.getElementsByTagName('body')[0]).appendChild(ds);
-  })();
-</script> 
 
 
 
